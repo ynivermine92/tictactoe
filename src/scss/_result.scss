@@ -1,0 +1,60 @@
+.result {
+  &__title {
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+  &__winner{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: blueviolet;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  &__items{
+      color: red;
+      font-size: 20px;
+  }
+  &__item{
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+  }
+  &__result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__result-clouse{
+    margin-top: 60px;
+  }
+  &__result-zero{
+    margin-top: 20px;
+  }
+  &__reset, .result__restart{
+    margin: 50px 5px 0px 5px;
+    
+    padding: 20px 40px;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #2980b9;
+    color: #fff;
+    transition: all 0.9s;
+    &:hover{
+        background-color: #2980b9;
+        transform: scale(0.98);
+        transition: all 0.9s;
+        color: #000;
+    }
+  }
+  &__inner{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+

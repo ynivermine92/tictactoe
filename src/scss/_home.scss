@@ -1,0 +1,23 @@
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn{
+        padding: 40px 60px;
+        font-size: 60px;
+        transition: background-color 0.3s, transform 0.3s;
+        background-color: #2980b9;
+        color: #fff;
+        transition: all 0.9s;
+        &:hover{
+            background-color: #2980b9;
+            transform: scale(0.98);
+            transition: all 0.9s;
+            color: #000;
+        }
+    }
+}

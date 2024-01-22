@@ -1,0 +1,77 @@
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  .modal {
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+    &__title {
+      text-align: center;
+    }
+    &__items {
+      display: flex;
+    }
+
+    &__sab-title {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      animation: blink 3s infinite;
+    }
+    &__item {
+      margin: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+      transition: all 0.9s;
+      & .svg-clouse {
+        fill: #ffff;
+      }
+      & .svg-zero {
+        fill: #ffff;
+      }
+      &:hover {
+        background: white;
+        border: 1px solid #000;
+        opacity: 1;
+        transition: all 0.9s;
+        & .svg-clouse {
+          fill: rgb(0, 21, 255);
+        }
+        & .svg-zero {
+          fill: red;
+        }
+      }
+    }
+    &__item-link{
+      width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  }
+  
+}
+
+// ************************ Кнопка вызова модального окна ************************ //
+.modal__btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}

@@ -1,0 +1,76 @@
+// Global SCSS-files imports
+@import "./vars";
+@import "./reset";
+@import "./global";
+
+// Sections or Pages SCSS-files imports
+@import "./home";
+@import "./modal";
+@import "./game";
+@import "./result";
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal__wrapper {
+    .modal__item-link {
+      width: 120px;
+      height: 120px;
+    }
+    .svg-clouse,
+    .svg-zero {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  .game {
+    &__title {
+      font-size: 30px;
+    }
+    &__item-imageClouse {
+      height: 80px;
+      width: 80px;
+    }
+    &__item-imageZero {
+      height: 60px;
+      width: 60px;
+    }
+    &__items {
+      max-width: 800px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 140px);
+      margin: 0 auto;
+    }
+  }
+    .result{
+      &__result-clouse, .result__result-zero{
+        font-size: 15px;
+      }
+      &__reset, .result__restart{
+          padding: 30px;
+          margin-top: 20px;
+          font-size: 18px;
+      }
+      &__inner{
+        flex-direction: column;
+      }
+      
+    }
+}
+
+// @import './footer';
+
+// Libs
+/* @import './libs/fancybox'; */
+// @import './libs/swiper';

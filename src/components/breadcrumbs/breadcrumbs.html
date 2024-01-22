@@ -1,0 +1,16 @@
+<div class="breadcrumbs">
+  <ul class="breadcrumbs__list">
+    <li class="breadcrumbs__item">
+      <a href="index.html" class="breadcrumbs__link">Главная</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link"><span>/</span> Каталог</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link"><span>/</span> Колесные экскаваторы</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <span class="breadcrumbs__current">/ Hyundai ROBEX 140W-7</span>
+    </li>
+  </ul>
+</div>
